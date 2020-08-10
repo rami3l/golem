@@ -1,3 +1,3 @@
 FROM python:slim
-COPY * golem
+COPY * golem/
 ENTRYPOINT ["sh"]
