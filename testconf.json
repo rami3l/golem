@@ -1,5 +1,6 @@
 {
   "name": "golem",
+  "title": "Golem",
   "tags": ["test", "python"],
   "testGroups": {
     "default": ["succ"]
