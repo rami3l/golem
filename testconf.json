@@ -11,7 +11,7 @@
     "$stdin": "in",
     "$stdout": "out"
   },
-  "run": ["cd golem", "python ./golemc.py $src -o $bin", "cat $stdin | python ./golem.py $bin"],
+  "run": ["cat $stdin | python ./golem.py $bin"],
   "binds": [{ "from": "src", "to": "/src", "options": "ro" }],
   "mapped_dir": "src"
 }
