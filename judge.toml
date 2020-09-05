@@ -1,5 +1,5 @@
 [jobs.test0]
-image = {source = "dockerfile", path = "."}
+image = {source = "dockerfile", path = ".", tag = "golemc"}
 run = [
   "python ./golemc.py $src -o $bin",
 ]
