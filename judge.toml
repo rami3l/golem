@@ -1,0 +1,12 @@
+[jobs.test0]
+image = {source = "dockerfile", path = ".", tag = "golemc"}
+run = [
+  "python ./golemc.py $src -o $bin",
+]
+[jobs.golem1]
+image = {source = "dockerfile", path = ".", tag = "golemc"}
+run = [
+  "echo $PWD",
+  "ls",
+  "python ./golemc.py $src -o $bin",
+]

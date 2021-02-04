@@ -1,3 +1,4 @@
 FROM python:slim
-COPY * golem/
+COPY * /golem/
+WORKDIR /golem/
 ENTRYPOINT ["sh"]

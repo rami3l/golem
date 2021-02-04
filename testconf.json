@@ -1,5 +1,6 @@
 {
-  "name": "golem",
+  "name": "golem1",
+  "title": "Golem",
   "tags": ["test", "python"],
   "testGroups": {
     "default": ["succ"]
@@ -10,7 +11,7 @@
     "$stdin": "in",
     "$stdout": "out"
   },
-  "run": ["cd golem", "python ./golemc.py $src -o $bin", "cat $stdin | python ./golem.py $bin"],
-  "binds": [{ "from": "src", "to": "/src", "options": "ro" }],
-  "mapped_dir": "src"
+  "run": ["cat $stdin | python ./golem.py $bin"],
+  "binds": [],
+  "mapped_dir": { "from": "src/", "to": "/src/", "readonly": true }
 }
